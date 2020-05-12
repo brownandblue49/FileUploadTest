@@ -20,12 +20,12 @@ from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-     url(r'^admin/', admin.site.urls),
-  #  url(r'^$', views.button),  
+    url(r'^admin/', admin.site.urls),
+    #  url(r'^$', views.button),  
     url(r'^$', views.home, name="home"), 
-  # url(r'^output', views.output,name="script"),
+    # url(r'^output', views.output,name="script"),
     url(r'^external', views.external , name="script" ),
-   # url(r'^index', views.index , name="script" ),
+    # url(r'^index', views.index , name="script" ),
     path('EPM/', views.EPMFileUpload, name="EPMFileUpload"),
     path('Index/', views.index)
        
